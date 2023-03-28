@@ -16,7 +16,7 @@ mod tests {
 
     #[test]
     fn test_vec() {
-        assert_eq!(max!(vec![1, 3, 2, 8, 5];).unwrap(), &8);
-        assert_eq!(max!(vec![1, 3, 2]; 0, 3).unwrap(), &3);
+        assert_eq!(max!(vec![1, 3, 2, 8, 5];), Some(&8));
+        assert_eq!(max!(vec![1, 3, 2, 8, 5]; 0, 3), Some(&3));
     }
 }
